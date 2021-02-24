@@ -22,8 +22,7 @@ class PianoLayout : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
 
         _binding = FragmentPianoBinding.inflate(layoutInflater)
         val view = binding.root
@@ -59,7 +58,7 @@ class PianoLayout : Fragment() {
         }
 
         ft.commit()
-        return inflater.inflate(R.layout.fragment_piano, container, false)
+        return view
     }
 
 }

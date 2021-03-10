@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         }.addOnFailureListener {
             Log.e(TAG, "Error i lagring", it)
         }
+        //T
     }
 
     private fun signInAnonymously(){
@@ -50,6 +51,5 @@ class MainActivity : AppCompatActivity() {
         }.addOnFailureListener {
             Log.e(TAG, "Login failed", it)
         }
-
     }
 }

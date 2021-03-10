@@ -110,6 +110,7 @@ class PianoLayout : Fragment() {
             if (score.count() > 0 && fileName.isNotEmpty() && path != null){
 
                 this.onSave?.invoke(file.toUri());
+                
                 if(fileExists){
                     Toast.makeText(activity,"$fileName this name is taken. Please enter different file name.", Toast.LENGTH_SHORT).show()
 

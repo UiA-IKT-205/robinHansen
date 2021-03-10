@@ -1,6 +1,7 @@
 package com.example.mypiano
 
 import Note
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.ContactsContract
@@ -10,6 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import androidx.core.net.toUri
 import com.example.mypiano.databinding.FragmentPianoBinding
 import kotlinx.android.synthetic.main.fragment_full_tone_piano_key.view.*
 import kotlinx.android.synthetic.main.fragment_full_tone_piano_key.view.fullToneKey
@@ -21,6 +23,8 @@ import java.time.format.DateTimeFormatter
 
 
 class PianoLayout : Fragment() {
+
+    var onSave:((file:Uri) -> Unit)? = null
 
     private var _binding:FragmentPianoBinding? = null
     private val binding get() = _binding!!
@@ -104,8 +108,12 @@ class PianoLayout : Fragment() {
             val file = File(path, fileName)
             val fileExists = file.exists()
             if (score.count() > 0 && fileName.isNotEmpty() && path != null){
+
+                this.onSave?.invoke(file.toUri());
                 if(fileExists){
                     Toast.makeText(activity,"$fileName this name is taken. Please enter different file name.", Toast.LENGTH_SHORT).show()
+
+
                 } else{
                     FileOutputStream(File(path,fileName),true).bufferedWriter().use { writer ->
                         score.forEach {

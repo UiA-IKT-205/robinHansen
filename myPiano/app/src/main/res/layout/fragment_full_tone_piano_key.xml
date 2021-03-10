@@ -11,7 +11,7 @@
         android:id="@+id/fullToneKey"
         android:orientation="horizontal"
         android:layout_width="45dp"
-        android:layout_height="400dp"
+        android:layout_height="300dp"
         android:layout_margin="0.5dp"
         android:backgroundTint="@color/white"
         android:background="@drawable/pianokeyshape"

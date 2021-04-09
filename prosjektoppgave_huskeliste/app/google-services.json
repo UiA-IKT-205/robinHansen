@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1060957276612",
+    "project_id": "prosjektoppgave-huskeliste",
+    "storage_bucket": "prosjektoppgave-huskeliste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060957276612:android:86bb9b78b0b15ffc32fc91",
+        "android_client_info": {
+          "package_name": "com.example.prosjektoppgave_huskeliste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1060957276612-5s1ke8b5lm782bq9pvb6eut6q9mqpqm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0OuCUGei8P9OS9piUChCUP3IlJRr9ieA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060957276612-5s1ke8b5lm782bq9pvb6eut6q9mqpqm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

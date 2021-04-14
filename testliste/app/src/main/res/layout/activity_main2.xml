@@ -16,13 +16,25 @@
         app:layout_constraintTop_toBottomOf="@+id/Overskrift" />
 
 
+    <Button
+        android:id="@+id/Returner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Returner"
+        app:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/liste_gjenstander"
+        app:layout_constraintTop_toBottomOf="@id/liste_gjenstander"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
         android:id="@+id/Overskrift"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="42dp"
         android:gravity="center"
-        android:text="Min Huskeliste"
+        android:text="Liste innhold:"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/liste_gjenstander"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +47,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:hint="Tittel til liste"
+        android:hint="Legg til innhold"
         app:layout_constraintEnd_toStartOf="@+id/Legg_til_knapp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,9 +58,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        app:backgroundTint="@color/black"
         android:text="Legg til liste"
-app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

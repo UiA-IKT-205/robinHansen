@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "266715264722",
+    "project_id": "minhuskeliste-2302e",
+    "storage_bucket": "minhuskeliste-2302e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266715264722:android:55f56e0958673aa3c55f0b",
+        "android_client_info": {
+          "package_name": "com.example.minhuskeliste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266715264722-s171553tocajq3gpnq57tv2epaq98u7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAejVIupzCG3n1Ro-094fIWbr4NHi_HAm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266715264722-s171553tocajq3gpnq57tv2epaq98u7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
